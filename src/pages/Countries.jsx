@@ -40,7 +40,6 @@ const Countries = () => {
   const handleChange = (e) => {
     const term = e.target.value;
     setSearchTerm(term);
-    // filterResults(term, region);
   };
 
   const countries = searchTerm || region ? results || [] : data;
@@ -48,7 +47,6 @@ const Countries = () => {
   const handleRegionChange = (e) => {
     const selectedRegion = e.target.value;
     setRegion(selectedRegion);
-    // filterResults(searchTerm, selectedRegion);
   };
 
   useEffect(() => {
