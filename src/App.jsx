@@ -12,10 +12,9 @@ import Error from "./pages/Error";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/" element={<Layout />} errorElement={<Error />}>
       <Route index element={<Countries />} loader={countriesLoader} />
       <Route path="/:name" element={<Country />} loader={countryLoader} />
-      <Route path="*" element={<Error />} />
     </Route>
   )
 );
