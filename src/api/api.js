@@ -1,5 +1,5 @@
 export async function getCountries() {
-  const res = await fetch("../../data.json", {
+  const res = await fetch("/data.json", {
     headers: { Accept: "application/json" },
   });
 
